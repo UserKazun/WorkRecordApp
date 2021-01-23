@@ -13,12 +13,13 @@
 		0FF69AFE25BAF791004A0F41 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FF69AFD25BAF791004A0F41 /* Preview Assets.xcassets */; };
 		0FF69B0925BAF791004A0F41 /* WorkRecordAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69B0825BAF791004A0F41 /* WorkRecordAppTests.swift */; };
 		0FF69B1425BAF791004A0F41 /* WorkRecordAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69B1325BAF791004A0F41 /* WorkRecordAppUITests.swift */; };
-		0FF69B2525BC2C7E004A0F41 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69B2425BC2C7E004A0F41 /* HomeView.swift */; };
-		0FF69B2C25BC3261004A0F41 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69B2B25BC3261004A0F41 /* HomeRouter.swift */; };
+		0FF69B2525BC2C7E004A0F41 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69B2425BC2C7E004A0F41 /* TimerView.swift */; };
+		0FF69B2C25BC3261004A0F41 /* TimerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69B2B25BC3261004A0F41 /* TimerRouter.swift */; };
 		0FF69B3425BC3277004A0F41 /* TimerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69B3325BC3277004A0F41 /* TimerDetailView.swift */; };
 		0FF69B3C25BC328D004A0F41 /* TimerDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69B3B25BC328D004A0F41 /* TimerDetailRouter.swift */; };
 		0FF69B4125BC329D004A0F41 /* TimerDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69B4025BC329D004A0F41 /* TimerDetailPresenter.swift */; };
 		0FF69B4625BC32B1004A0F41 /* TimerDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69B4525BC32B1004A0F41 /* TimerDetailInteractor.swift */; };
+		0FF69B5525BC3356004A0F41 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69B5425BC3356004A0F41 /* HomeTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,12 +52,13 @@
 		0FF69B0F25BAF791004A0F41 /* WorkRecordAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkRecordAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF69B1325BAF791004A0F41 /* WorkRecordAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkRecordAppUITests.swift; sourceTree = "<group>"; };
 		0FF69B1525BAF791004A0F41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0FF69B2425BC2C7E004A0F41 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		0FF69B2B25BC3261004A0F41 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		0FF69B2425BC2C7E004A0F41 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		0FF69B2B25BC3261004A0F41 /* TimerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerRouter.swift; sourceTree = "<group>"; };
 		0FF69B3325BC3277004A0F41 /* TimerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDetailView.swift; sourceTree = "<group>"; };
 		0FF69B3B25BC328D004A0F41 /* TimerDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDetailRouter.swift; sourceTree = "<group>"; };
 		0FF69B4025BC329D004A0F41 /* TimerDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDetailPresenter.swift; sourceTree = "<group>"; };
 		0FF69B4525BC32B1004A0F41 /* TimerDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDetailInteractor.swift; sourceTree = "<group>"; };
+		0FF69B5425BC3356004A0F41 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +109,8 @@
 		0FF69AF525BAF78E004A0F41 /* WorkRecordApp */ = {
 			isa = PBXGroup;
 			children = (
-				0FF69B2925BC3005004A0F41 /* HomeModule */,
+				0FF69B5325BC3348004A0F41 /* HomeTabModule */,
+				0FF69B2925BC3005004A0F41 /* TimerModule */,
 				0FF69B2A25BC3229004A0F41 /* TimerDetailModule */,
 				0FF69AF625BAF78E004A0F41 /* WorkRecordAppApp.swift */,
 				0FF69AF825BAF78E004A0F41 /* ContentView.swift */,
@@ -144,13 +147,13 @@
 			path = WorkRecordAppUITests;
 			sourceTree = "<group>";
 		};
-		0FF69B2925BC3005004A0F41 /* HomeModule */ = {
+		0FF69B2925BC3005004A0F41 /* TimerModule */ = {
 			isa = PBXGroup;
 			children = (
-				0FF69B2425BC2C7E004A0F41 /* HomeView.swift */,
-				0FF69B2B25BC3261004A0F41 /* HomeRouter.swift */,
+				0FF69B2425BC2C7E004A0F41 /* TimerView.swift */,
+				0FF69B2B25BC3261004A0F41 /* TimerRouter.swift */,
 			);
-			path = HomeModule;
+			path = TimerModule;
 			sourceTree = "<group>";
 		};
 		0FF69B2A25BC3229004A0F41 /* TimerDetailModule */ = {
@@ -162,6 +165,14 @@
 				0FF69B3B25BC328D004A0F41 /* TimerDetailRouter.swift */,
 			);
 			path = TimerDetailModule;
+			sourceTree = "<group>";
+		};
+		0FF69B5325BC3348004A0F41 /* HomeTabModule */ = {
+			isa = PBXGroup;
+			children = (
+				0FF69B5425BC3356004A0F41 /* HomeTabView.swift */,
+			);
+			path = HomeTabModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,9 +304,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FF69B2525BC2C7E004A0F41 /* HomeView.swift in Sources */,
+				0FF69B2525BC2C7E004A0F41 /* TimerView.swift in Sources */,
 				0FF69B3425BC3277004A0F41 /* TimerDetailView.swift in Sources */,
-				0FF69B2C25BC3261004A0F41 /* HomeRouter.swift in Sources */,
+				0FF69B2C25BC3261004A0F41 /* TimerRouter.swift in Sources */,
+				0FF69B5525BC3356004A0F41 /* HomeTabView.swift in Sources */,
 				0FF69B3C25BC328D004A0F41 /* TimerDetailRouter.swift in Sources */,
 				0FF69AF925BAF78E004A0F41 /* ContentView.swift in Sources */,
 				0FF69B4625BC32B1004A0F41 /* TimerDetailInteractor.swift in Sources */,
