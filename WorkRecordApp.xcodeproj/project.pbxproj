@@ -14,6 +14,11 @@
 		0FF69B0925BAF791004A0F41 /* WorkRecordAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69B0825BAF791004A0F41 /* WorkRecordAppTests.swift */; };
 		0FF69B1425BAF791004A0F41 /* WorkRecordAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69B1325BAF791004A0F41 /* WorkRecordAppUITests.swift */; };
 		0FF69B2525BC2C7E004A0F41 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69B2425BC2C7E004A0F41 /* HomeView.swift */; };
+		0FF69B2C25BC3261004A0F41 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69B2B25BC3261004A0F41 /* HomeRouter.swift */; };
+		0FF69B3425BC3277004A0F41 /* TimerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69B3325BC3277004A0F41 /* TimerDetailView.swift */; };
+		0FF69B3C25BC328D004A0F41 /* TimerDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69B3B25BC328D004A0F41 /* TimerDetailRouter.swift */; };
+		0FF69B4125BC329D004A0F41 /* TimerDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69B4025BC329D004A0F41 /* TimerDetailPresenter.swift */; };
+		0FF69B4625BC32B1004A0F41 /* TimerDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69B4525BC32B1004A0F41 /* TimerDetailInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		0FF69B1325BAF791004A0F41 /* WorkRecordAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkRecordAppUITests.swift; sourceTree = "<group>"; };
 		0FF69B1525BAF791004A0F41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FF69B2425BC2C7E004A0F41 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0FF69B2B25BC3261004A0F41 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		0FF69B3325BC3277004A0F41 /* TimerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDetailView.swift; sourceTree = "<group>"; };
+		0FF69B3B25BC328D004A0F41 /* TimerDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDetailRouter.swift; sourceTree = "<group>"; };
+		0FF69B4025BC329D004A0F41 /* TimerDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDetailPresenter.swift; sourceTree = "<group>"; };
+		0FF69B4525BC32B1004A0F41 /* TimerDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDetailInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +107,13 @@
 		0FF69AF525BAF78E004A0F41 /* WorkRecordApp */ = {
 			isa = PBXGroup;
 			children = (
+				0FF69B2925BC3005004A0F41 /* HomeModule */,
+				0FF69B2A25BC3229004A0F41 /* TimerDetailModule */,
 				0FF69AF625BAF78E004A0F41 /* WorkRecordAppApp.swift */,
 				0FF69AF825BAF78E004A0F41 /* ContentView.swift */,
 				0FF69AFA25BAF791004A0F41 /* Assets.xcassets */,
 				0FF69AFF25BAF791004A0F41 /* Info.plist */,
 				0FF69AFC25BAF791004A0F41 /* Preview Content */,
-				0FF69B2425BC2C7E004A0F41 /* HomeView.swift */,
 			);
 			path = WorkRecordApp;
 			sourceTree = "<group>";
@@ -131,6 +142,26 @@
 				0FF69B1525BAF791004A0F41 /* Info.plist */,
 			);
 			path = WorkRecordAppUITests;
+			sourceTree = "<group>";
+		};
+		0FF69B2925BC3005004A0F41 /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				0FF69B2425BC2C7E004A0F41 /* HomeView.swift */,
+				0FF69B2B25BC3261004A0F41 /* HomeRouter.swift */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		0FF69B2A25BC3229004A0F41 /* TimerDetailModule */ = {
+			isa = PBXGroup;
+			children = (
+				0FF69B4525BC32B1004A0F41 /* TimerDetailInteractor.swift */,
+				0FF69B4025BC329D004A0F41 /* TimerDetailPresenter.swift */,
+				0FF69B3325BC3277004A0F41 /* TimerDetailView.swift */,
+				0FF69B3B25BC328D004A0F41 /* TimerDetailRouter.swift */,
+			);
+			path = TimerDetailModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +294,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FF69B2525BC2C7E004A0F41 /* HomeView.swift in Sources */,
+				0FF69B3425BC3277004A0F41 /* TimerDetailView.swift in Sources */,
+				0FF69B2C25BC3261004A0F41 /* HomeRouter.swift in Sources */,
+				0FF69B3C25BC328D004A0F41 /* TimerDetailRouter.swift in Sources */,
 				0FF69AF925BAF78E004A0F41 /* ContentView.swift in Sources */,
+				0FF69B4625BC32B1004A0F41 /* TimerDetailInteractor.swift in Sources */,
 				0FF69AF725BAF78E004A0F41 /* WorkRecordAppApp.swift in Sources */,
+				0FF69B4125BC329D004A0F41 /* TimerDetailPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
