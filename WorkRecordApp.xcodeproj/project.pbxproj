@@ -109,11 +109,11 @@
 		0FF69AF525BAF78E004A0F41 /* WorkRecordApp */ = {
 			isa = PBXGroup;
 			children = (
+				0FF69AF625BAF78E004A0F41 /* WorkRecordAppApp.swift */,
+				0FF69AF825BAF78E004A0F41 /* ContentView.swift */,
 				0FF69B5325BC3348004A0F41 /* HomeTabModule */,
 				0FF69B2925BC3005004A0F41 /* TimerModule */,
 				0FF69B2A25BC3229004A0F41 /* TimerDetailModule */,
-				0FF69AF625BAF78E004A0F41 /* WorkRecordAppApp.swift */,
-				0FF69AF825BAF78E004A0F41 /* ContentView.swift */,
 				0FF69AFA25BAF791004A0F41 /* Assets.xcassets */,
 				0FF69AFF25BAF791004A0F41 /* Info.plist */,
 				0FF69AFC25BAF791004A0F41 /* Preview Content */,

@@ -9,7 +9,19 @@ import SwiftUI
 
 struct HomeTabView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            NavigationView {
+                TimerView()
+            }
+            .tabItem {
+                VStack {
+                    Image(systemName: "house")
+                    Text("Home")
+                }
+            }
+            .tag(1)
+        }
+        
     }
 }
 
