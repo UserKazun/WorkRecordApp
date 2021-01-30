@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TimerView: View {
     var body: some View {
-        VStack {
+        VStack(spacing: 40) {
             HStack {
                 Spacer()
             }
@@ -33,17 +33,39 @@ struct TimerView: View {
             )
             
             VStack {
-                HStack {
+                HStack(spacing: 30) {
                     Text("ここにタイマー")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(.black)
-                        .padding(.leading, -75)
+                        .padding(.leading, -35)
+                    
+                    Button(action: {
+                        
+                    }, label: {
+                        Image(systemName: "play.fill")
+                            .font(.title)
+                            .foregroundColor(Color("PrimaryColor"))
+                            .padding(.leading, 35)
+                    })
                 }
                 
                 Divider()
             }
             .padding(25)
+            
+            VStack {
+                Text("Music Player")
+                    .foregroundColor(Color.white)
+            }
+            .padding()
+            .padding(.bottom, 50)
+            .background(Color.black)
+            .cornerRadius(25)
+            .padding(.vertical)
+            //.padding(.bottom)
+            .padding(.horizontal, 55)
+            
         }
     }
 }
