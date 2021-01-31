@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var dataModel = DataModel()
+    
     var body: some View {
-        HomeTabView()
+        TimerView()
+            .environmentObject(dataModel)
     }
 }
 
