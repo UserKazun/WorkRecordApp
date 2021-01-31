@@ -12,40 +12,29 @@ struct TimerView: View {
     
     var body: some View {
         VStack {
-            VStack {
-                HStack(spacing: 30) {
-                    Text("ここにタイマー")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .foregroundColor(.black)
-                        .padding(.leading, -35)
-                    
-                    Button(action: {
-                        
-                    }, label: {
-                        Image(systemName: "play.fill")
-                            .font(.title)
-                            .foregroundColor(Color("PrimaryColor"))
-                            .padding(.leading, 35)
-                    })
-                }
+            HStack {
+                Text("Home")
+                    .font(Font.custom(FontsManager.Monstserrat.bold, size: 24))
                 
-                Divider()
+                Spacer()
+                
+                Button(action: {
+                    
+                }, label: {
+                    Image(systemName: "gear")
+                        .font(.system(size: 28, weight: .medium))
+                        .foregroundColor(Color("textColor"))
+                })
             }
-            .padding(25)
+            .padding(.horizontal)
+            .padding(.leading, 14)
+            .padding(.top, 30)
             
+            HourTimeSelector()
+            MinuteTimeSelector()
+            SecondsTimeSelector()
             
-            VStack {
-                Text("Music Player")
-                    .foregroundColor(Color.white)
-            }
-            .padding()
-            .padding(.bottom, 50)
-            .background(Color.black)
-            .cornerRadius(25)
-            .padding(.vertical)
-            //.padding(.bottom)
-            .padding(.horizontal, 55)
+            Spacer()
         }
     }
 }
