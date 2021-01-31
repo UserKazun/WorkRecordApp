@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TimerView: View {
+    @EnvironmentObject var dataModel: DataModel
+    
     var body: some View {
         VStack {
             VStack {

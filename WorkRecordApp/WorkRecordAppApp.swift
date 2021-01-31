@@ -9,11 +9,10 @@ import SwiftUI
 
 @main
 struct WorkRecordAppApp: App {
-    let dateModel = DataModel()
     
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(dateModel)
+            ContentView()
         }
     }
 }

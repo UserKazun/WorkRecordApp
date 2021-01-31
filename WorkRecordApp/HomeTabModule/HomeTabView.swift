@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct HomeTabView: View {
+    @StateObject var dataModel = DataModel()
+    
     var body: some View {
         TabView {
             NavigationView {
-                TimerView()
+                TimerView().environmentObject(dataModel)
             }
             .tabItem {
                 Image(systemName: "house")
