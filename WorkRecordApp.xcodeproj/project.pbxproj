@@ -34,6 +34,7 @@
 		0FCA983425C6C72300AA7A67 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0FCA982125C6C72300AA7A67 /* Montserrat-SemiBoldItalic.ttf */; };
 		0FCA983525C6C72300AA7A67 /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0FCA982225C6C72300AA7A67 /* Montserrat-ExtraBoldItalic.ttf */; };
 		0FCA983A25C6C89B00AA7A67 /* FontsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA983925C6C89B00AA7A67 /* FontsManager.swift */; };
+		0FCA983F25C6CB4E00AA7A67 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0FCA983E25C6CB4E00AA7A67 /* .gitignore */; };
 		0FF69AF725BAF78E004A0F41 /* WorkRecordAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69AF625BAF78E004A0F41 /* WorkRecordAppApp.swift */; };
 		0FF69AF925BAF78E004A0F41 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69AF825BAF78E004A0F41 /* ContentView.swift */; };
 		0FF69AFB25BAF791004A0F41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FF69AFA25BAF791004A0F41 /* Assets.xcassets */; };
@@ -91,6 +92,7 @@
 		0FCA982125C6C72300AA7A67 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		0FCA982225C6C72300AA7A67 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		0FCA983925C6C89B00AA7A67 /* FontsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsManager.swift; sourceTree = "<group>"; };
+		0FCA983E25C6CB4E00AA7A67 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0FF69AF325BAF78E004A0F41 /* WorkRecordApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkRecordApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF69AF625BAF78E004A0F41 /* WorkRecordAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkRecordAppApp.swift; sourceTree = "<group>"; };
 		0FF69AF825BAF78E004A0F41 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			children = (
 				0FCA980F25C6C72300AA7A67 /* Montserrat */,
 				0FCA983925C6C89B00AA7A67 /* FontsManager.swift */,
+				0FCA983E25C6CB4E00AA7A67 /* .gitignore */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				0FCA982B25C6C72300AA7A67 /* Montserrat-MediumItalic.ttf in Resources */,
 				0FCA983125C6C72300AA7A67 /* Montserrat-Black.ttf in Resources */,
 				0FCA982A25C6C72300AA7A67 /* Montserrat-Bold.ttf in Resources */,
+				0FCA983F25C6CB4E00AA7A67 /* .gitignore in Resources */,
 				0FCA982D25C6C72300AA7A67 /* Montserrat-SemiBold.ttf in Resources */,
 				0FCA982625C6C72300AA7A67 /* Montserrat-Light.ttf in Resources */,
 				0FCA983325C6C72300AA7A67 /* Montserrat-Italic.ttf in Resources */,
