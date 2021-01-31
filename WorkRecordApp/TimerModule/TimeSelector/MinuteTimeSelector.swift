@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MinuteTimeSelector: View {
+    @State var selected = 0
+    
     var body: some View {
         VStack {
             HStack {
@@ -21,13 +23,12 @@ struct MinuteTimeSelector: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 20) {
-                    ForEach(1 ..< 61) { item in
+                    ForEach(0 ..< 60) { item in
                         Button(action: {
-                            
+                            selected = item
                         }, label: {
                             Text("\(item)")
-                                .font(Font.custom(FontsManager.Monstserrat.regular, size: 24))
-                                .foregroundColor(Color("textColor"))
+                                .modifier(SelectorButtonModifier())
                         })
                     }
                 }
