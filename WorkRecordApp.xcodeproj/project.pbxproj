@@ -10,6 +10,7 @@
 		0FCA97C025C6687C00AA7A67 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 0FCA97BF25C6687C00AA7A67 /* Realm */; };
 		0FCA97C225C6687C00AA7A67 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0FCA97C125C6687C00AA7A67 /* RealmSwift */; };
 		0FCA97CC25C668CF00AA7A67 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA97CB25C668CF00AA7A67 /* DataModel.swift */; };
+		0FCA97DA25C66AA400AA7A67 /* WorkedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA97D925C66AA400AA7A67 /* WorkedEntity.swift */; };
 		0FF69AF725BAF78E004A0F41 /* WorkRecordAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69AF625BAF78E004A0F41 /* WorkRecordAppApp.swift */; };
 		0FF69AF925BAF78E004A0F41 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69AF825BAF78E004A0F41 /* ContentView.swift */; };
 		0FF69AFB25BAF791004A0F41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FF69AFA25BAF791004A0F41 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		0FCA97CB25C668CF00AA7A67 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		0FCA97D925C66AA400AA7A67 /* WorkedEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkedEntity.swift; sourceTree = "<group>"; };
 		0FF69AF325BAF78E004A0F41 /* WorkRecordApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkRecordApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF69AF625BAF78E004A0F41 /* WorkRecordAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkRecordAppApp.swift; sourceTree = "<group>"; };
 		0FF69AF825BAF78E004A0F41 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				0FCA97CB25C668CF00AA7A67 /* DataModel.swift */,
+				0FCA97D925C66AA400AA7A67 /* WorkedEntity.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -104,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				0FF69AF525BAF78E004A0F41 /* WorkRecordApp */,
-				0FCA97C725C668AC00AA7A67 /* Entities */,
 				0FF69B0725BAF791004A0F41 /* WorkRecordAppTests */,
 				0FF69B1225BAF791004A0F41 /* WorkRecordAppUITests */,
 				0FF69AF425BAF78E004A0F41 /* Products */,
@@ -131,6 +133,7 @@
 				0FF69B2A25BC3229004A0F41 /* TimerDetailModule */,
 				0FF69AFA25BAF791004A0F41 /* Assets.xcassets */,
 				0FF69AFF25BAF791004A0F41 /* Info.plist */,
+				0FCA97C725C668AC00AA7A67 /* Entities */,
 				0FF69AFC25BAF791004A0F41 /* Preview Content */,
 			);
 			path = WorkRecordApp;
@@ -332,6 +335,7 @@
 				0FF69B5525BC3356004A0F41 /* HomeTabView.swift in Sources */,
 				0FF69B3C25BC328D004A0F41 /* TimerDetailRouter.swift in Sources */,
 				0FCA97CC25C668CF00AA7A67 /* DataModel.swift in Sources */,
+				0FCA97DA25C66AA400AA7A67 /* WorkedEntity.swift in Sources */,
 				0FF69AF925BAF78E004A0F41 /* ContentView.swift in Sources */,
 				0FF69B4625BC32B1004A0F41 /* TimerDetailInteractor.swift in Sources */,
 				0FF69AF725BAF78E004A0F41 /* WorkRecordAppApp.swift in Sources */,
