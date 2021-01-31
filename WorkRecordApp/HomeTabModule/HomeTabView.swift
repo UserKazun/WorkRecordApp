@@ -14,14 +14,11 @@ struct HomeTabView: View {
                 TimerView()
             }
             .tabItem {
-                VStack {
-                    Image(systemName: "house")
-                    Text("Home")
-                }
+                Image(systemName: "house")
+                Text("Home")
             }
             .tag(1)
         }
-        
     }
 }
 

@@ -9,29 +9,7 @@ import SwiftUI
 
 struct TimerView: View {
     var body: some View {
-        VStack(spacing: 40) {
-            HStack {
-                Spacer()
-            }
-            .padding()
-            .overlay(
-                HStack {
-                    Image("cloud")
-                        .shadow(color: Color.black.opacity(0.09), radius: 5, x: 2, y: 5)
-                        .offset(x: -25, y: -50)
-                    
-                    Spacer()
-                    
-                    VStack {
-                        Image("cloud")
-                            .shadow(color: Color.black.opacity(0.09), radius: 5, x: 2, y: 5)
-                            .offset(x: 20, y: -70)
-                        
-                        Spacer()
-                    }
-                }, alignment: .bottom
-            )
-            
+        VStack {
             VStack {
                 HStack(spacing: 30) {
                     Text("ここにタイマー")
@@ -54,6 +32,7 @@ struct TimerView: View {
             }
             .padding(25)
             
+            
             VStack {
                 Text("Music Player")
                     .foregroundColor(Color.white)
@@ -65,7 +44,6 @@ struct TimerView: View {
             .padding(.vertical)
             //.padding(.bottom)
             .padding(.horizontal, 55)
-            
         }
     }
 }
