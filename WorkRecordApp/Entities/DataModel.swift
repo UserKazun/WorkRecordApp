@@ -33,7 +33,7 @@ class DataModel: ObservableObject {
         })
     }
     
-    func addData(presentation: Binding) {
+    func addData(presentation: Binding<PresentationMode>) {
         if title == "" || desc == "" { return }
         
         let workedEntity = WorkedEntity()

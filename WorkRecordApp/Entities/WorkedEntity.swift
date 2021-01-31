@@ -9,7 +9,7 @@ import SwiftUI
 import RealmSwift
 
 class WorkedEntity: Object, Identifiable {
-    @objc dynamic var id: UUID = UUID()
+    @objc dynamic var id: Date = Date()
     @objc dynamic var title = ""
     @objc dynamic var desc = ""
     @objc dynamic var time = Date()
