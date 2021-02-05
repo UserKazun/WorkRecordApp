@@ -39,7 +39,7 @@ struct MinuteTimeSelector: View {
                     }
                 }
                 .padding(30)
-                .padding(.bottom, 10)
+                .padding(.bottom, 30)
             }
 
         }

@@ -19,7 +19,7 @@ struct HourTimeSelector: View {
                 Spacer()
             }
             .padding(.horizontal)
-            .padding(.top, 100)
+            .padding(.top, 60)
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 20) {
@@ -39,7 +39,7 @@ struct HourTimeSelector: View {
                     }
                 }
                 .padding(30)
-                .padding(.bottom, 10)
+                .padding(.bottom, 30)
             }
 
         }
