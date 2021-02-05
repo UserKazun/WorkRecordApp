@@ -13,8 +13,8 @@ struct TimerView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("Home")
-                    .font(Font.custom(FontsManager.Monstserrat.bold, size: 24))
+//                Text("Home")
+//                    .font(Font.custom(FontsManager.Monstserrat.bold, size: 24))
                 
                 Spacer()
                 
@@ -22,7 +22,7 @@ struct TimerView: View {
                     
                 }, label: {
                     Image(systemName: "gear")
-                        .font(.system(size: 28, weight: .medium))
+                        .font(.system(size: 24, weight: .medium))
                         .foregroundColor(Color("textColor"))
                 })
             }
@@ -30,11 +30,38 @@ struct TimerView: View {
             .padding(.leading, 14)
             .padding(.top, 30)
             
-            HourTimeSelector()
-            MinuteTimeSelector()
-            SecondsTimeSelector()
+            VStack {
+                HourTimeSelector()
+                MinuteTimeSelector()
+                SecondsTimeSelector()
+            }
+            
             
             Spacer()
+            
+            HStack {
+                Button(action: {
+                    
+                }) {
+                    Text("CANCELL")
+                        .font(Font.custom(FontsManager.Monstserrat.bold, size: 24))
+                        .padding(.leading, 14)
+                        .foregroundColor(Color("DefaultButtonColor"))
+                }
+                
+                Spacer()
+                
+                Button(action: {
+                    
+                }) {
+                    Text("START")
+                        .font(Font.custom(FontsManager.Monstserrat.bold, size: 24))
+                        .padding(.trailing, 14)
+                        .foregroundColor(Color("StartButtonBackgroundColor"))
+                }
+            }
+            .padding()
+            .padding(.bottom, 50)
         }
     }
 }

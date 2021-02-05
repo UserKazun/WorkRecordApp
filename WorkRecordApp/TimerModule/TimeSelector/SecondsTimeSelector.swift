@@ -39,6 +39,7 @@ struct SecondsTimeSelector: View {
                     }
                 }
                 .padding(30)
+                .padding(.bottom, 30)
             }
 
         }

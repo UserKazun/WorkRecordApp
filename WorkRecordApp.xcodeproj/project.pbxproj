@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F33013B25CD656000E2F71E /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33013A25CD656000E2F71E /* ActionButton.swift */; };
 		0F75975B25C6D63F004A8B4E /* SelectorButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F75975A25C6D63F004A8B4E /* SelectorButtonModifier.swift */; };
 		0FCA97C025C6687C00AA7A67 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 0FCA97BF25C6687C00AA7A67 /* Realm */; };
 		0FCA97C225C6687C00AA7A67 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0FCA97C125C6687C00AA7A67 /* RealmSwift */; };
@@ -68,6 +69,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F33013A25CD656000E2F71E /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 		0F75975A25C6D63F004A8B4E /* SelectorButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorButtonModifier.swift; sourceTree = "<group>"; };
 		0FCA97CB25C668CF00AA7A67 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		0FCA97D925C66AA400AA7A67 /* WorkedEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkedEntity.swift; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				0FCA97F825C6C3FC00AA7A67 /* TimeSelector */,
+				0F33013A25CD656000E2F71E /* ActionButton.swift */,
 				0FF69B2425BC2C7E004A0F41 /* TimerView.swift */,
 				0FF69B2B25BC3261004A0F41 /* TimerRouter.swift */,
 			);
@@ -444,6 +447,7 @@
 				0FCA980225C6C46200AA7A67 /* SecondsTimeSelector.swift in Sources */,
 				0FCA97CC25C668CF00AA7A67 /* DataModel.swift in Sources */,
 				0FCA97FD25C6C44700AA7A67 /* MinuteTimeSelector.swift in Sources */,
+				0F33013B25CD656000E2F71E /* ActionButton.swift in Sources */,
 				0FCA97DA25C66AA400AA7A67 /* WorkedEntity.swift in Sources */,
 				0FCA97F125C6B2D400AA7A67 /* HourTimeSelector.swift in Sources */,
 				0F75975B25C6D63F004A8B4E /* SelectorButtonModifier.swift in Sources */,
