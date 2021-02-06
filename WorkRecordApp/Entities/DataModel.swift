@@ -33,7 +33,7 @@ class DataModel: ObservableObject {
         })
     }
     
-    func addData(presentation: Binding<PresentationMode>) {
+    func addData() {
         if title == "" || desc == "" { return }
         
         let workedEntity = WorkedEntity()
@@ -58,8 +58,6 @@ class DataModel: ObservableObject {
         }
         
         featchData()
-        
-        presentation.wrappedValue.dismiss()
     }
     
     func deleteData(object: WorkedEntity) {

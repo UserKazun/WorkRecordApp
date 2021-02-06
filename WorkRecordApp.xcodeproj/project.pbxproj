@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0F33013B25CD656000E2F71E /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33013A25CD656000E2F71E /* ActionButton.swift */; };
+		0F33015025CE562B00E2F71E /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33014F25CE562B00E2F71E /* Timer.swift */; };
+		0F33015825CE5C8900E2F71E /* TimerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33015725CE5C8900E2F71E /* TimerInteractor.swift */; };
+		0F33015D25CE5E3E00E2F71E /* TimerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33015C25CE5E3E00E2F71E /* TimerPresenter.swift */; };
 		0F75975B25C6D63F004A8B4E /* SelectorButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F75975A25C6D63F004A8B4E /* SelectorButtonModifier.swift */; };
 		0FCA97C025C6687C00AA7A67 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 0FCA97BF25C6687C00AA7A67 /* Realm */; };
 		0FCA97C225C6687C00AA7A67 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0FCA97C125C6687C00AA7A67 /* RealmSwift */; };
@@ -70,6 +73,9 @@
 
 /* Begin PBXFileReference section */
 		0F33013A25CD656000E2F71E /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		0F33014F25CE562B00E2F71E /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		0F33015725CE5C8900E2F71E /* TimerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerInteractor.swift; sourceTree = "<group>"; };
+		0F33015C25CE5E3E00E2F71E /* TimerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPresenter.swift; sourceTree = "<group>"; };
 		0F75975A25C6D63F004A8B4E /* SelectorButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorButtonModifier.swift; sourceTree = "<group>"; };
 		0FCA97CB25C668CF00AA7A67 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		0FCA97D925C66AA400AA7A67 /* WorkedEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkedEntity.swift; sourceTree = "<group>"; };
@@ -144,6 +150,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F33014E25CE55DA00E2F71E /* Functional Views */ = {
+			isa = PBXGroup;
+			children = (
+				0F33014F25CE562B00E2F71E /* Timer.swift */,
+			);
+			path = "Functional Views";
+			sourceTree = "<group>";
+		};
 		0FCA97C725C668AC00AA7A67 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,12 +237,13 @@
 		0FF69AF525BAF78E004A0F41 /* WorkRecordApp */ = {
 			isa = PBXGroup;
 			children = (
+				0FF69AFA25BAF791004A0F41 /* Assets.xcassets */,
+				0FF69AFF25BAF791004A0F41 /* Info.plist */,
 				0FF69AF625BAF78E004A0F41 /* WorkRecordAppApp.swift */,
 				0FF69AF825BAF78E004A0F41 /* ContentView.swift */,
 				0FF69B2925BC3005004A0F41 /* TimerModule */,
 				0FF69B2A25BC3229004A0F41 /* TimerDetailModule */,
-				0FF69AFA25BAF791004A0F41 /* Assets.xcassets */,
-				0FF69AFF25BAF791004A0F41 /* Info.plist */,
+				0F33014E25CE55DA00E2F71E /* Functional Views */,
 				0FCA980625C6C6A800AA7A67 /* fonts */,
 				0FCA97C725C668AC00AA7A67 /* Entities */,
 				0FF69AFC25BAF791004A0F41 /* Preview Content */,
@@ -266,9 +281,11 @@
 			isa = PBXGroup;
 			children = (
 				0FCA97F825C6C3FC00AA7A67 /* TimeSelector */,
+				0F33015725CE5C8900E2F71E /* TimerInteractor.swift */,
 				0F33013A25CD656000E2F71E /* ActionButton.swift */,
 				0FF69B2425BC2C7E004A0F41 /* TimerView.swift */,
 				0FF69B2B25BC3261004A0F41 /* TimerRouter.swift */,
+				0F33015C25CE5E3E00E2F71E /* TimerPresenter.swift */,
 			);
 			path = TimerModule;
 			sourceTree = "<group>";
@@ -446,6 +463,7 @@
 				0FF69B3C25BC328D004A0F41 /* TimerDetailRouter.swift in Sources */,
 				0FCA980225C6C46200AA7A67 /* SecondsTimeSelector.swift in Sources */,
 				0FCA97CC25C668CF00AA7A67 /* DataModel.swift in Sources */,
+				0F33015825CE5C8900E2F71E /* TimerInteractor.swift in Sources */,
 				0FCA97FD25C6C44700AA7A67 /* MinuteTimeSelector.swift in Sources */,
 				0F33013B25CD656000E2F71E /* ActionButton.swift in Sources */,
 				0FCA97DA25C66AA400AA7A67 /* WorkedEntity.swift in Sources */,
@@ -456,6 +474,8 @@
 				0FF69AF725BAF78E004A0F41 /* WorkRecordAppApp.swift in Sources */,
 				0FCA983A25C6C89B00AA7A67 /* FontsManager.swift in Sources */,
 				0FF69B4125BC329D004A0F41 /* TimerDetailPresenter.swift in Sources */,
+				0F33015025CE562B00E2F71E /* Timer.swift in Sources */,
+				0F33015D25CE5E3E00E2F71E /* TimerPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
