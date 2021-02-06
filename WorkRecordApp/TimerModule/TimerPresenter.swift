@@ -13,23 +13,41 @@ class TimerPresenter: ObservableObject {
     private let router = TimerRouter()
     
     @Published var workedEntities: [WorkedEntity] = []
+    @Published var isTimerFlg = false
     
     init(interactor: TimerInteractor) {
         self.interactor = interactor
     }
     
-    func addNewReport() {
-        interactor.addNewReport()
+    func makeStartButton() -> some View {
+        Button(action: startTimerAction) {
+            Text("START")
+                .font(Font.custom(FontsManager.Monstserrat.bold, size: 24))
+                .padding(.trailing, 14)
+                .foregroundColor(Color("StartButtonBackgroundColor"))
+        }
     }
     
-    func deleteReport(object: WorkedEntity) {
-        interactor.deleteReport(object: object)
+    func makeCancellButton() -> some View {
+        Button(action: cancellTimerAction) {
+            Text("CANCELL")
+                .font(Font.custom(FontsManager.Monstserrat.bold, size: 24))
+                .padding(.leading, 14)
+                .foregroundColor(Color("DefaultButtonColor"))
+        }
     }
     
-    func linkBuiler<Content: View>(for workedEntitiy: WorkedEntity, @ViewBuilder content: () -> Content) -> some View {
+    private func startTimerAction() {
+        isTimerFlg = true
+    }
+    
+    private func cancellTimerAction() {
+        isTimerFlg = false
+    }
+    
+    func linkBuilder<Content: View>(for workedEntitiy: WorkedEntity, @ViewBuilder content: () -> Content) -> some View {
         NavigationLink(destination: router.makeDetailView(for: workedEntitiy, model: interactor.model)) {
             content()
         }
     }
-
 }

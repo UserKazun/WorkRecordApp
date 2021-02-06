@@ -28,37 +28,24 @@ struct TimerView: View {
             .padding(.top, 30)
             
             VStack {
-//                HourTimeSelector()
-//                MinuteTimeSelector()
-//                SecondsTimeSelector()
-                
-                Timer()
-                    .padding(.top, 130)
+                if presenter.isTimerFlg {
+                    TimerComponents()
+                        .padding(.top, 130)
+                } else {
+                    HourTimeSelector()
+                    MinuteTimeSelector()
+                    SecondsTimeSelector()
+                }
             }
-            
             
             Spacer()
             
             HStack {
-                Button(action: {
-                    
-                }) {
-                    Text("CANCELL")
-                        .font(Font.custom(FontsManager.Monstserrat.bold, size: 24))
-                        .padding(.leading, 14)
-                        .foregroundColor(Color("DefaultButtonColor"))
-                }
+                self.presenter.makeCancellButton()
                 
                 Spacer()
                 
-                Button(action: {
-                    
-                }) {
-                    Text("START")
-                        .font(Font.custom(FontsManager.Monstserrat.bold, size: 24))
-                        .padding(.trailing, 14)
-                        .foregroundColor(Color("StartButtonBackgroundColor"))
-                }
+                self.presenter.makeStartButton()
             }
             .padding()
             .padding(.bottom, 50)
