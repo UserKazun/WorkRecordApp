@@ -14,12 +14,4 @@ class TimerInteractor {
     init(model: DataModel) {
         self.model = model
     }
-    
-    func addNewReport() {
-        self.model.addData()
-    }
-    
-    func deleteReport(object: WorkedEntity) {
-        self.model.deleteData(object: object)
-    }
 }
