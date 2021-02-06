@@ -7,14 +7,10 @@
 
 import SwiftUI
 
-struct TimerRouter: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct TimerRouter_Previews: PreviewProvider {
-    static var previews: some View {
-        TimerRouter()
+class TimerRouter {
+    func makeDetailView(for workedEntity: WorkedEntity, model: DataModel) -> some View {
+        let presenter = TimerDetailPresenter()
+        
+        return TimerDetailView(presenter: presenter)
     }
 }

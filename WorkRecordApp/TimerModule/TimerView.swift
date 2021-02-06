@@ -8,14 +8,11 @@
 import SwiftUI
 
 struct TimerView: View {
-    @EnvironmentObject var dataModel: DataModel
+    @ObservedObject var presenter: TimerPresenter
     
     var body: some View {
         VStack {
             HStack {
-//                Text("Home")
-//                    .font(Font.custom(FontsManager.Monstserrat.bold, size: 24))
-                
                 Spacer()
                 
                 Button(action: {
@@ -31,9 +28,12 @@ struct TimerView: View {
             .padding(.top, 30)
             
             VStack {
-                HourTimeSelector()
-                MinuteTimeSelector()
-                SecondsTimeSelector()
+//                HourTimeSelector()
+//                MinuteTimeSelector()
+//                SecondsTimeSelector()
+                
+                Timer()
+                    .padding(.top, 130)
             }
             
             
@@ -63,11 +63,5 @@ struct TimerView: View {
             .padding()
             .padding(.bottom, 50)
         }
-    }
-}
-
-struct TimerView_Previews: PreviewProvider {
-    static var previews: some View {
-        TimerView()
     }
 }

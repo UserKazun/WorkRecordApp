@@ -8,16 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var dataModel = DataModel()
+    @EnvironmentObject var model: DataModel
     
     var body: some View {
-        TimerView()
-            .environmentObject(dataModel)
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+        TimerView(presenter: TimerPresenter(interactor: TimerInteractor(model: model)))
     }
 }
