@@ -12,11 +12,50 @@ class TimerPresenter: ObservableObject {
     private let interactor: TimerInteractor
     private let router = TimerRouter()
     
+    //private var cancellables = Set<AnyCancellable>()
+    
+//    @Published var timerHour: String = "0"
+//    @Published var timerMinute: String = "0"
+//    @Published var timerSeconds: String = "0"
+//
+//    let setTimerHour: Binding<String>
+//    let setTimerMinute: Binding<String>
+//    let setTimerSeconds: Binding<String>
+    
     @Published var workedEntities: [WorkedEntity] = []
     @Published var isTimerFlg = false
     
+    @Published var hourSelected = "0"
+    @Published var minuteSelected = "0"
+    @Published var secondsSelected = "0"
+    
     init(interactor: TimerInteractor) {
         self.interactor = interactor
+        
+//        setTimerHour = Binding<String> (
+//            get: { interactor.timerHour },
+//            set: { interactor.setTimerHour($0) }
+//        )
+//        setTimerMinute = Binding<String> (
+//            get: { interactor.timerMinute },
+//            set: { interactor.setTimerMinute($0) }
+//        )
+//        setTimerSeconds = Binding<String> (
+//            get: { interactor.timerSeconds},
+//            set: { interactor.setTimerSeconds($0) }
+//        )
+//
+//        interactor.timerHourPublisher
+//            .assign(to: \.timerHour, on: self)
+//            .store(in: &cancellables)
+//
+//        interactor.timerHourPublisher
+//            .assign(to: \.timerMinute, on: self)
+//            .store(in: &cancellables)
+//
+//        interactor.timerSecondsPublisher
+//            .assign(to: \.timerSeconds, on: self)
+//            .store(in: &cancellables)
     }
     
     func makeStartButton() -> some View {

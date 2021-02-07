@@ -13,6 +13,10 @@ struct TimerComponents: View {
     @State var count = 0
     @State var time = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
+    @Binding var hour: String
+    @Binding var minute: String
+    @Binding var seconds: String
+    
     var body: some View {
         ZStack {
             VStack {
