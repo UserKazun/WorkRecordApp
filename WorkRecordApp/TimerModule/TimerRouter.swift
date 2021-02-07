@@ -13,4 +13,8 @@ class TimerRouter {
         
         return TimerDetailView(presenter: presenter)
     }
+    
+    func makeTimerComponents(hour: Binding<String>, minute: Binding<String>, seconds: Binding<String>) -> some View {
+        return TimerComponents(hour: hour, minute: minute, seconds: seconds)
+    }
 }
