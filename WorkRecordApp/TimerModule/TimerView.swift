@@ -2,7 +2,7 @@
 //  TimerView.swift
 //  WorkRecordApp
 //
-//  Created by kazunari.ueeda on 2021/01/23.
+//  Created by kazunari.ueeda on 2021/02/11.
 //
 
 import SwiftUI
@@ -33,7 +33,7 @@ struct TimerView: View {
             
             VStack {
                 if presenter.isTimerFlg {
-                    TimerComponents(hour: presenter.hourSelected, minute: presenter.minuteSelected, seconds: presenter.secondsSelected)
+                    TimerComponents(hour: presenter.getHourSelector())
                         .padding(.top, 130)
                 } else {
                     VStack {
@@ -50,14 +50,14 @@ struct TimerView: View {
                             HStack(spacing: 20) {
                                 ForEach(hour, id: \.self) { item in
                                     Button(action: {
-                                        presenter.hourSelected = item
+                                        presenter.setHourSelector(selected: item)
                                     }) {
                                         Text("\(item)")
                                             .modifier(SelectorButtonModifier())
                                             .background(
                                                 ZStack {
                                                     Circle()
-                                                        .fill(Color("ButtonBackgroundColor").opacity(presenter.hourSelected == item ? 1 : 0))
+                                                        .fill(Color("ButtonBackgroundColor").opacity(presenter.getHourSelector() == item ? 1 : 0))
                                                 }
                                             )
                                     }
@@ -69,7 +69,7 @@ struct TimerView: View {
 
                     }
                     .padding(.leading, 14)
-                    
+                    /*
                     VStack {
                         HStack {
                             Text("Minute")
@@ -137,6 +137,7 @@ struct TimerView: View {
 
                     }
                     .padding(.leading, 14)
+ */
                 }
             }
             
@@ -158,7 +159,7 @@ struct TimerView: View {
 var hour = [
     "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
     "11", "12", "13", "14", "15", "16", "17", "18", "19", "20",
-    "21", "22", "23", "23"
+    "21", "22", "23"
 ]
 
 var minute = [

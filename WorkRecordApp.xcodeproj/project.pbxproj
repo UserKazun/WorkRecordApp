@@ -13,14 +13,13 @@
 		0F33015825CE5C8900E2F71E /* TimerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33015725CE5C8900E2F71E /* TimerInteractor.swift */; };
 		0F33015D25CE5E3E00E2F71E /* TimerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33015C25CE5E3E00E2F71E /* TimerPresenter.swift */; };
 		0F42FA2E25CF95B3004945D6 /* TimerComponentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F42FA2D25CF95B3004945D6 /* TimerComponentsPresenter.swift */; };
+		0F42FA3625CFF7DD004945D6 /* TimerComponentsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F42FA3525CFF7DD004945D6 /* TimerComponentsInteractor.swift */; };
+		0F42FA4425D51EDF004945D6 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F42FA4325D51EDF004945D6 /* TimerView.swift */; };
 		0F75975B25C6D63F004A8B4E /* SelectorButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F75975A25C6D63F004A8B4E /* SelectorButtonModifier.swift */; };
 		0FCA97C025C6687C00AA7A67 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 0FCA97BF25C6687C00AA7A67 /* Realm */; };
 		0FCA97C225C6687C00AA7A67 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0FCA97C125C6687C00AA7A67 /* RealmSwift */; };
 		0FCA97CC25C668CF00AA7A67 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA97CB25C668CF00AA7A67 /* DataModel.swift */; };
 		0FCA97DA25C66AA400AA7A67 /* WorkedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA97D925C66AA400AA7A67 /* WorkedEntity.swift */; };
-		0FCA97F125C6B2D400AA7A67 /* HourTimeSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA97F025C6B2D400AA7A67 /* HourTimeSelector.swift */; };
-		0FCA97FD25C6C44700AA7A67 /* MinuteTimeSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA97FC25C6C44700AA7A67 /* MinuteTimeSelector.swift */; };
-		0FCA980225C6C46200AA7A67 /* SecondsTimeSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA980125C6C46200AA7A67 /* SecondsTimeSelector.swift */; };
 		0FCA982325C6C72300AA7A67 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0FCA981025C6C72300AA7A67 /* Montserrat-LightItalic.ttf */; };
 		0FCA982425C6C72300AA7A67 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0FCA981125C6C72300AA7A67 /* Montserrat-Medium.ttf */; };
 		0FCA982525C6C72300AA7A67 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0FCA981225C6C72300AA7A67 /* Montserrat-BoldItalic.ttf */; };
@@ -48,7 +47,6 @@
 		0FF69AFE25BAF791004A0F41 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FF69AFD25BAF791004A0F41 /* Preview Assets.xcassets */; };
 		0FF69B0925BAF791004A0F41 /* WorkRecordAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69B0825BAF791004A0F41 /* WorkRecordAppTests.swift */; };
 		0FF69B1425BAF791004A0F41 /* WorkRecordAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69B1325BAF791004A0F41 /* WorkRecordAppUITests.swift */; };
-		0FF69B2525BC2C7E004A0F41 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69B2425BC2C7E004A0F41 /* TimerView.swift */; };
 		0FF69B2C25BC3261004A0F41 /* TimerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69B2B25BC3261004A0F41 /* TimerRouter.swift */; };
 		0FF69B3425BC3277004A0F41 /* TimerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69B3325BC3277004A0F41 /* TimerDetailView.swift */; };
 		0FF69B3C25BC328D004A0F41 /* TimerDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69B3B25BC328D004A0F41 /* TimerDetailRouter.swift */; };
@@ -80,12 +78,11 @@
 		0F33015725CE5C8900E2F71E /* TimerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerInteractor.swift; sourceTree = "<group>"; };
 		0F33015C25CE5E3E00E2F71E /* TimerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPresenter.swift; sourceTree = "<group>"; };
 		0F42FA2D25CF95B3004945D6 /* TimerComponentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerComponentsPresenter.swift; sourceTree = "<group>"; };
+		0F42FA3525CFF7DD004945D6 /* TimerComponentsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerComponentsInteractor.swift; sourceTree = "<group>"; };
+		0F42FA4325D51EDF004945D6 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		0F75975A25C6D63F004A8B4E /* SelectorButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorButtonModifier.swift; sourceTree = "<group>"; };
 		0FCA97CB25C668CF00AA7A67 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		0FCA97D925C66AA400AA7A67 /* WorkedEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkedEntity.swift; sourceTree = "<group>"; };
-		0FCA97F025C6B2D400AA7A67 /* HourTimeSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourTimeSelector.swift; sourceTree = "<group>"; };
-		0FCA97FC25C6C44700AA7A67 /* MinuteTimeSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinuteTimeSelector.swift; sourceTree = "<group>"; };
-		0FCA980125C6C46200AA7A67 /* SecondsTimeSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondsTimeSelector.swift; sourceTree = "<group>"; };
 		0FCA981025C6C72300AA7A67 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
 		0FCA981125C6C72300AA7A67 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		0FCA981225C6C72300AA7A67 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -119,7 +116,6 @@
 		0FF69B0F25BAF791004A0F41 /* WorkRecordAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkRecordAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF69B1325BAF791004A0F41 /* WorkRecordAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkRecordAppUITests.swift; sourceTree = "<group>"; };
 		0FF69B1525BAF791004A0F41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0FF69B2425BC2C7E004A0F41 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		0FF69B2B25BC3261004A0F41 /* TimerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerRouter.swift; sourceTree = "<group>"; };
 		0FF69B3325BC3277004A0F41 /* TimerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDetailView.swift; sourceTree = "<group>"; };
 		0FF69B3B25BC328D004A0F41 /* TimerDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDetailRouter.swift; sourceTree = "<group>"; };
@@ -178,16 +174,6 @@
 				0F14B94F25CEEF5000C9469B /* TimerEntity.swift */,
 			);
 			path = Entities;
-			sourceTree = "<group>";
-		};
-		0FCA97F825C6C3FC00AA7A67 /* TimeSelector */ = {
-			isa = PBXGroup;
-			children = (
-				0FCA97F025C6B2D400AA7A67 /* HourTimeSelector.swift */,
-				0FCA97FC25C6C44700AA7A67 /* MinuteTimeSelector.swift */,
-				0FCA980125C6C46200AA7A67 /* SecondsTimeSelector.swift */,
-			);
-			path = TimeSelector;
 			sourceTree = "<group>";
 		};
 		0FCA980625C6C6A800AA7A67 /* fonts */ = {
@@ -292,11 +278,11 @@
 		0FF69B2925BC3005004A0F41 /* TimerModule */ = {
 			isa = PBXGroup;
 			children = (
-				0FCA97F825C6C3FC00AA7A67 /* TimeSelector */,
 				0F33015725CE5C8900E2F71E /* TimerInteractor.swift */,
 				0F33015C25CE5E3E00E2F71E /* TimerPresenter.swift */,
-				0FF69B2425BC2C7E004A0F41 /* TimerView.swift */,
+				0F42FA4325D51EDF004945D6 /* TimerView.swift */,
 				0FF69B2B25BC3261004A0F41 /* TimerRouter.swift */,
+				0F42FA3525CFF7DD004945D6 /* TimerComponentsInteractor.swift */,
 				0F42FA2D25CF95B3004945D6 /* TimerComponentsPresenter.swift */,
 				0F14B94A25CEBB4500C9469B /* TimerComponents.swift */,
 				0F14B96025CF888800C9469B /* Modifier */,
@@ -471,20 +457,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FF69B2525BC2C7E004A0F41 /* TimerView.swift in Sources */,
 				0FF69B3425BC3277004A0F41 /* TimerDetailView.swift in Sources */,
 				0FF69B2C25BC3261004A0F41 /* TimerRouter.swift in Sources */,
 				0FF69B3C25BC328D004A0F41 /* TimerDetailRouter.swift in Sources */,
 				0F14B94B25CEBB4500C9469B /* TimerComponents.swift in Sources */,
-				0FCA980225C6C46200AA7A67 /* SecondsTimeSelector.swift in Sources */,
 				0FCA97CC25C668CF00AA7A67 /* DataModel.swift in Sources */,
 				0F33015825CE5C8900E2F71E /* TimerInteractor.swift in Sources */,
 				0F42FA2E25CF95B3004945D6 /* TimerComponentsPresenter.swift in Sources */,
-				0FCA97FD25C6C44700AA7A67 /* MinuteTimeSelector.swift in Sources */,
 				0F33013B25CD656000E2F71E /* ActionButton.swift in Sources */,
 				0FCA97DA25C66AA400AA7A67 /* WorkedEntity.swift in Sources */,
-				0FCA97F125C6B2D400AA7A67 /* HourTimeSelector.swift in Sources */,
 				0F75975B25C6D63F004A8B4E /* SelectorButtonModifier.swift in Sources */,
+				0F42FA4425D51EDF004945D6 /* TimerView.swift in Sources */,
+				0F42FA3625CFF7DD004945D6 /* TimerComponentsInteractor.swift in Sources */,
 				0FF69AF925BAF78E004A0F41 /* ContentView.swift in Sources */,
 				0FF69B4625BC32B1004A0F41 /* TimerDetailInteractor.swift in Sources */,
 				0FF69AF725BAF78E004A0F41 /* WorkRecordAppApp.swift in Sources */,

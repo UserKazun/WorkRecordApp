@@ -76,6 +76,14 @@ class TimerPresenter: ObservableObject {
         }
     }
     
+    func setHourSelector(selected: String) {
+        hourSelected = selected
+    }
+    
+    func getHourSelector() -> String {
+        return hourSelected
+    }
+    
     private func startTimerAction() {
         isTimerFlg = true
     }

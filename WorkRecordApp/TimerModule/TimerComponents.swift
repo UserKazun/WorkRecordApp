@@ -13,9 +13,9 @@ struct TimerComponents: View {
     @State var count = 0
     @State var time = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
-    @Binding var hour: String
-    @Binding var minute: String
-    @Binding var seconds: String
+    var hour: String
+//    @Binding var minute: String
+//    @Binding var seconds: String
     
     var body: some View {
         ZStack {
@@ -33,7 +33,7 @@ struct TimerComponents: View {
                         .rotationEffect(.init(degrees: -90))
                     
                     VStack {
-                        Text("カウント時間")
+                        Text("\(hour)")
                             .font(.system(size: 28))
                             .fontWeight(.regular)
                         
@@ -47,15 +47,14 @@ struct TimerComponents: View {
         }
         .onReceive(self.time) { (_) in
             if self.start {
-                if self.count != 15 {
+                if Int(self.hour) != self.count {
                     self.count += 1
                     
                     withAnimation(.default) {
-                        self.to = CGFloat(self.count) / 15
+                        self.to = CGFloat(self.count) / CGFloat(Int(self.hour)!)
                     }
                 }
             }
         }
     }
 }
-
