@@ -15,6 +15,7 @@
 		0F42FA2E25CF95B3004945D6 /* TimerComponentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F42FA2D25CF95B3004945D6 /* TimerComponentsPresenter.swift */; };
 		0F42FA3625CFF7DD004945D6 /* TimerComponentsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F42FA3525CFF7DD004945D6 /* TimerComponentsInteractor.swift */; };
 		0F42FA4425D51EDF004945D6 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F42FA4325D51EDF004945D6 /* TimerView.swift */; };
+		0F46675525D7D28E00703239 /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F46675425D7D28E00703239 /* DateTime.swift */; };
 		0F75975B25C6D63F004A8B4E /* SelectorButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F75975A25C6D63F004A8B4E /* SelectorButtonModifier.swift */; };
 		0FCA97C025C6687C00AA7A67 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 0FCA97BF25C6687C00AA7A67 /* Realm */; };
 		0FCA97C225C6687C00AA7A67 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0FCA97C125C6687C00AA7A67 /* RealmSwift */; };
@@ -80,6 +81,7 @@
 		0F42FA2D25CF95B3004945D6 /* TimerComponentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerComponentsPresenter.swift; sourceTree = "<group>"; };
 		0F42FA3525CFF7DD004945D6 /* TimerComponentsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerComponentsInteractor.swift; sourceTree = "<group>"; };
 		0F42FA4325D51EDF004945D6 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		0F46675425D7D28E00703239 /* DateTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
 		0F75975A25C6D63F004A8B4E /* SelectorButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorButtonModifier.swift; sourceTree = "<group>"; };
 		0FCA97CB25C668CF00AA7A67 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		0FCA97D925C66AA400AA7A67 /* WorkedEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkedEntity.swift; sourceTree = "<group>"; };
@@ -166,6 +168,14 @@
 			path = "Functional Views";
 			sourceTree = "<group>";
 		};
+		0F46675325D7D26400703239 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				0F46675425D7D28E00703239 /* DateTime.swift */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
 		0FCA97C725C668AC00AA7A67 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +245,7 @@
 		0FF69AF525BAF78E004A0F41 /* WorkRecordApp */ = {
 			isa = PBXGroup;
 			children = (
+				0F46675325D7D26400703239 /* Functions */,
 				0FF69AFA25BAF791004A0F41 /* Assets.xcassets */,
 				0FF69AFF25BAF791004A0F41 /* Info.plist */,
 				0FF69AF625BAF78E004A0F41 /* WorkRecordAppApp.swift */,
@@ -459,6 +470,7 @@
 			files = (
 				0FF69B3425BC3277004A0F41 /* TimerDetailView.swift in Sources */,
 				0FF69B2C25BC3261004A0F41 /* TimerRouter.swift in Sources */,
+				0F46675525D7D28E00703239 /* DateTime.swift in Sources */,
 				0FF69B3C25BC328D004A0F41 /* TimerDetailRouter.swift in Sources */,
 				0F14B94B25CEBB4500C9469B /* TimerComponents.swift in Sources */,
 				0FCA97CC25C668CF00AA7A67 /* DataModel.swift in Sources */,

@@ -10,10 +10,6 @@ import SwiftUI
 struct TimerView: View {
     @ObservedObject var presenter: TimerPresenter
     
-//    @State var hourSelected = "0"
-//    @State var minuteSelected = "0"
-//    @State var secondsSelected = "0"
-    
     var body: some View {
         VStack {
             HStack {
@@ -33,7 +29,7 @@ struct TimerView: View {
             
             VStack {
                 if presenter.isTimerFlg {
-                    TimerComponents(hour: presenter.getHourSelector())
+                    TimerComponents(hour: presenter.getHourSelector(), minute: presenter.getMinuteSelector(), second: presenter.getSecondSelector())
                         .padding(.top, 130)
                 } else {
                     VStack {
@@ -66,10 +62,10 @@ struct TimerView: View {
                             .padding(30)
                             .padding(.bottom, 30)
                         }
-
+                        
                     }
                     .padding(.leading, 14)
-                    /*
+                    
                     VStack {
                         HStack {
                             Text("Minute")
@@ -84,14 +80,14 @@ struct TimerView: View {
                             HStack(spacing: 20) {
                                 ForEach(minute, id: \.self) { item in
                                     Button(action: {
-                                        presenter.minuteSelected = item
+                                        presenter.setMinuteSelector(selected: item)
                                     }, label: {
                                         Text("\(item)")
                                             .modifier(SelectorButtonModifier())
                                             .background(
                                                 ZStack {
                                                     Circle()
-                                                        .fill(Color("ButtonBackgroundColor").opacity(presenter.minuteSelected == item ? 1 : 0))
+                                                        .fill(Color("ButtonBackgroundColor").opacity(presenter.getMinuteSelector() == item ? 1 : 0))
                                                 }
                                             )
                                     })
@@ -100,7 +96,7 @@ struct TimerView: View {
                             .padding(30)
                             .padding(.bottom, 30)
                         }
-
+                        
                     }
                     .padding(.leading, 14)
                     
@@ -116,16 +112,16 @@ struct TimerView: View {
                         
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack(spacing: 20) {
-                                ForEach(seconds, id: \.self) { item in
+                                ForEach(second, id: \.self) { item in
                                     Button(action: {
-                                        presenter.secondsSelected = item
+                                        presenter.setSecondsSelector(selected: item)
                                     }, label: {
                                         Text("\(item)")
                                             .modifier(SelectorButtonModifier())
                                             .background(
                                                 ZStack {
                                                     Circle()
-                                                        .fill(Color("ButtonBackgroundColor").opacity(presenter.secondsSelected == item ? 1 : 0))
+                                                        .fill(Color("ButtonBackgroundColor").opacity(presenter.getSecondSelector() == item ? 1 : 0))
                                                 }
                                             )
                                     })
@@ -134,10 +130,9 @@ struct TimerView: View {
                             .padding(30)
                             .padding(.bottom, 30)
                         }
-
+                        
                     }
                     .padding(.leading, 14)
- */
                 }
             }
             
@@ -171,7 +166,7 @@ var minute = [
     "51", "52", "53", "54", "55", "56", "57", "58", "59"
 ]
 
-var seconds = [
+var second = [
     "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
     "11", "12", "13", "14", "15", "16", "17", "18", "19", "20",
     "21", "22", "23", "24", "25", "26", "27", "28", "29", "30",
