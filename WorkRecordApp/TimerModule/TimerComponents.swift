@@ -14,8 +14,8 @@ struct TimerComponents: View {
     @State var time = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     var hour: String
-//    @Binding var minute: String
-//    @Binding var seconds: String
+    var minute: String
+    var second: String
     
     var body: some View {
         ZStack {
@@ -33,7 +33,7 @@ struct TimerComponents: View {
                         .rotationEffect(.init(degrees: -90))
                     
                     VStack {
-                        Text("\(hour)")
+                        Text(formatDatetimeToString(hour: hour, minute: minute, second: second))
                             .font(.system(size: 28))
                             .fontWeight(.regular)
                         
@@ -46,12 +46,15 @@ struct TimerComponents: View {
             }
         }
         .onReceive(self.time) { (_) in
+            let limit = convertToSecond(hour: self.hour, minute: self.minute, second: self.second)
             if self.start {
-                if Int(self.hour) != self.count {
+                if limit != self.count {
                     self.count += 1
                     
+//                    timerString = String(format: "%.2f", (Date().timeIntervalSince(Date())))
+                    
                     withAnimation(.default) {
-                        self.to = CGFloat(self.count) / CGFloat(Int(self.hour)!)
+                        self.to = CGFloat(self.count) / CGFloat(limit)
                     }
                 }
             }
