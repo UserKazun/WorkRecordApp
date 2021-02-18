@@ -17,6 +17,7 @@
 		0F42FA4425D51EDF004945D6 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F42FA4325D51EDF004945D6 /* TimerView.swift */; };
 		0F46675525D7D28E00703239 /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F46675425D7D28E00703239 /* DateTime.swift */; };
 		0F75975B25C6D63F004A8B4E /* SelectorButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F75975A25C6D63F004A8B4E /* SelectorButtonModifier.swift */; };
+		0FA6DF7D25DEA05500BB4B50 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA6DF7C25DEA05500BB4B50 /* RecordView.swift */; };
 		0FCA97C025C6687C00AA7A67 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 0FCA97BF25C6687C00AA7A67 /* Realm */; };
 		0FCA97C225C6687C00AA7A67 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0FCA97C125C6687C00AA7A67 /* RealmSwift */; };
 		0FCA97CC25C668CF00AA7A67 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA97CB25C668CF00AA7A67 /* DataModel.swift */; };
@@ -83,6 +84,7 @@
 		0F42FA4325D51EDF004945D6 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		0F46675425D7D28E00703239 /* DateTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
 		0F75975A25C6D63F004A8B4E /* SelectorButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorButtonModifier.swift; sourceTree = "<group>"; };
+		0FA6DF7C25DEA05500BB4B50 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
 		0FCA97CB25C668CF00AA7A67 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		0FCA97D925C66AA400AA7A67 /* WorkedEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkedEntity.swift; sourceTree = "<group>"; };
 		0FCA981025C6C72300AA7A67 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
@@ -176,6 +178,14 @@
 			path = Functions;
 			sourceTree = "<group>";
 		};
+		0FA6DF7025DE9F8500BB4B50 /* RecordModule */ = {
+			isa = PBXGroup;
+			children = (
+				0FA6DF7C25DEA05500BB4B50 /* RecordView.swift */,
+			);
+			path = RecordModule;
+			sourceTree = "<group>";
+		};
 		0FCA97C725C668AC00AA7A67 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +255,7 @@
 		0FF69AF525BAF78E004A0F41 /* WorkRecordApp */ = {
 			isa = PBXGroup;
 			children = (
+				0FA6DF7025DE9F8500BB4B50 /* RecordModule */,
 				0F46675325D7D26400703239 /* Functions */,
 				0FF69AFA25BAF791004A0F41 /* Assets.xcassets */,
 				0FF69AFF25BAF791004A0F41 /* Info.plist */,
@@ -478,6 +489,7 @@
 				0F42FA2E25CF95B3004945D6 /* TimerComponentsPresenter.swift in Sources */,
 				0F33013B25CD656000E2F71E /* ActionButton.swift in Sources */,
 				0FCA97DA25C66AA400AA7A67 /* WorkedEntity.swift in Sources */,
+				0FA6DF7D25DEA05500BB4B50 /* RecordView.swift in Sources */,
 				0F75975B25C6D63F004A8B4E /* SelectorButtonModifier.swift in Sources */,
 				0F42FA4425D51EDF004945D6 /* TimerView.swift in Sources */,
 				0F42FA3625CFF7DD004945D6 /* TimerComponentsInteractor.swift in Sources */,
